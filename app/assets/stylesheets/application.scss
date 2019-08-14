@@ -11,3 +11,28 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.restos {
+  background-color: rgba(25, 48, 94, 0.5);
+  color: rgb(246, 246, 246);
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  text-align: center;
+  box-shadow: 3px 3px 3px rgb(150, 150, 150);
+}
+
+.header-resto{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+
+.reviews {
+  background-color: rgba(150, 150, 150, 0.2);
+  padding: 1em;
+}

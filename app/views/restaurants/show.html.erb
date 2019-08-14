@@ -1,0 +1,16 @@
+<div class="container mt-5 col-6 offset-3">
+<h2><%= @restaurant.name %></h2>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.phone_number %></p>
+<p><%= @restaurant.category %></p>
+<div class="reviews">
+<p> Reviews </p>
+  <% @restaurant.reviews.each do |review| %>
+    <li> <%= review.content %> -
+    <%= review.rating %></li>
+  </ul>
+  <% end %>
+</div>
+<p> <%= link_to 'Add a review', new_restaurant_review_path(@restaurant) %>
+<p> <%= link_to 'Go back to list', restaurants_path %> </p>
+</p>
